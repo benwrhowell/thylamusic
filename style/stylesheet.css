@@ -1,0 +1,212 @@
+/* General Style
+-------------------------------------------------------- 
+ blue color: #6afbeb
+ */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+html {
+	margin:0;
+	padding:0;
+	overflow-y:scroll;
+} 
+
+body {
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	color: white;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: url("../img/background3.jpg") top right no-repeat;
+  	-webkit-background-size:  cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+} 
+
+@media all and (min-width: 600px) {
+	body {
+		height: 100%;
+		background: url("../img/background3.jpg") no-repeat center center fixed; 
+  		-webkit-background-size:  cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+		background-size: cover;
+	}
+
+}
+/*
+.content {
+	min-height: 100vh;
+}*/
+
+ul {
+	padding: 0;
+}
+￼
+
+
+/* html5 elements
+-------------------------------------------------------- 
+
+*/
+header,footer,nav,article,section,aside,figure,figcaption{display:block;}
+
+
+/* Logo style
+-------------------------------------------------------- 
+  
+*/
+
+.logo  {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.logo img {
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	opacity: 0.8;
+
+
+}
+
+
+@media all and (min-width: 600px) {
+	.logo  {
+	max-width: 800px;
+
+	}
+
+.logo img {
+	max-width: 800px;
+	}
+}
+
+/*  Footer style
+-------------------------------------------------------- 
+  
+*/
+
+
+.footer {
+	z-index: 2;
+	position:fixed;
+  	bottom:0;
+    width:100%;
+    height:40px;
+
+}
+
+.footer p {
+	text-align: right;
+	padding-right: 20px;
+	font-size: 12px; 
+
+}
+
+
+
+
+/* Style for social buttons 
+-------------------------------------------------------- 
+
+*/
+
+
+
+.buttons {
+	margin-top: 40px;
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+
+}
+
+
+.soc li {
+    display:inline-block;
+
+}
+	
+.soc li a {
+    overflow:hidden;
+    display:block;
+    z-index: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+ 	
+}
+
+
+.soc li a img { 
+ 	width: 40px;
+   	height: 40px;
+   	opacity: 0.8;
+
+
+}
+
+
+.soc a:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+
+
+@media all and (min-width: 600px) {
+
+	.soc li a img { 
+   	 	width: 60px;
+   	 	height: 60px;
+	}
+
+
+	.soc li {
+    margin-right: 50px;
+    margin-left: 50px;
+ 
+	}
+
+}
+
+
+/* style for soundcloud and bandsintown widget
+-------------------------------------------------------- 
+
+*/
+
+.soundcloud {
+
+	position: absolute;
+	bottom: 0;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	opacity: 0.8;
+}
+
+
+
+@media all and (min-width: 600px) {
+	.soundcloud {
+	/*	width: 85%;*/
+		max-height: 200px;
+	}
+}
+

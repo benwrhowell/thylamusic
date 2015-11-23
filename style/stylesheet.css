@@ -205,7 +205,6 @@ header,footer,nav,article,section,aside,figure,figcaption{display:block;}
 
 @media all and (min-width: 600px) {
 	.soundcloud {
-	/*	width: 85%;*/
 		max-height: 200px;
 	}
 }

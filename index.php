@@ -9,13 +9,13 @@ $title = "Thyla";
     <!--social media nav bar-->
     <div class="buttons">
         <ul class="soc">
-            <li><a class="soc-facebook" href="http://www.facebook.com/thylamusic" rel="facebook">
+            <li><a class="soc-facebook" href="http://www.facebook.com/thylamusic" rel="facebook" target="_blank">
                 <img src="img/facebookblue.png" alt="facebook icon"></a></li>
-            <li><a class="soc-twitter" href="http://www.twitter.com/thylamusic" rel="twitter">
+            <li><a class="soc-twitter" href="http://www.twitter.com/thylamusic" rel="twitter" target="_blank">
                 <img src="img/twitterblue.png" alt="twitter icon"></a></li>
-            <li><a class="soc-insta" href="http://www.instagram.com/thyla_music" rel="instagram">
+            <li><a class="soc-insta" href="http://www.instagram.com/thyla_music" rel="instagram" target="_blank">
                 <img src="img/instagramblue.png" alt="instagram icon"></a></li>
-            <li><a class="soc-youtube" href="http://www.youtube.com/channel/UCdMCcfeD3J3ZKCVPX6PyvDA/videos" rel="youtube">
+            <li><a class="soc-youtube" href="https://www.youtube.com/channel/UCQnVNhhXp7caaLaSjnQ3tXQ" rel="youtube" target="_blank">
                 <img src="img/youtubeblue.png" alt="youtube icon"></a></li>
             <li><a class="soc-email" href="mailto:thyla.music@gmail.com" rel="email">
                 <img src="img/emailblue.png" alt="email icon"></a></li>
@@ -23,13 +23,13 @@ $title = "Thyla";
     </div>
     <!-- logo-->
      <div class="logo"> 
-        <a href="http://soundcloud.com/thyla_music" rel"soundcloud">
+        <a href="http://soundcloud.com/thyla_music" rel"soundcloud" target="_blank">
         <img src="img/logoblue.png" alt="logo">
         </a>
     </div>
     <!--soundcloud widget-->
      <div class="soundcloud">
-        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/233896639&amp;color=6afbeb&amp;theme_color=6afbeb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/244018368&amp;color=6afbeb&amp;theme_color=6afbeb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
     </div>
 
 </div> <!-- close content div --> 

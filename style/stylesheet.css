@@ -10,8 +10,13 @@
 
 html {
 	margin:0;
-	padding:0;s
-	overflow-y:scroll;
+	padding:0;
+	height: 100%;
+	background: url("../img/thyla-bg.jpg") center center no-repeat;
+  	-webkit-background-size:  cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
 } 
 
 body {
@@ -19,25 +24,11 @@ body {
 	color: white;
 	margin: 0;
 	padding: 0;
-	height: 100vh;
-	background: url("../img/background2.jpg") top right no-repeat;
-  	-webkit-background-size:  cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-	background-size: cover;
+	height: 100%;
+	position: relative;
 } 
 
-@media all and (min-width: 600px) {
-	body {
-		height: 100%;
-		background: url("../img/background2.jpg") no-repeat center center fixed; 
-  		-webkit-background-size:  cover;
-  		-moz-background-size: cover;
-  		-o-background-size: cover;
-		background-size: cover;
-	}
 
-}
 
 ul {
 	padding: 0;
@@ -58,40 +49,28 @@ header,footer,nav,article,section,aside,figure,figcaption{display:block;}
 */
 
 .logo  {
-	max-width: 100%;
+	width: 100%;
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-
 	position: absolute;
-	bottom: 90px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .logo img {
-	max-width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	opacity: 0.8;
-	position: relative;
+	opacity: 0;
+	width: 670px;
+    max-width: 100%;
+    animation: fadein 2s ease-in;
+    animation-fill-mode: forwards;
 
 
 }
 
-
-
-@media all and (min-width: 700px) {
-	.logo  {
-	max-width: 700px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	position: static;
-
-	}
-
-.logo img {
-	max-width: 700px;
-	position: static;
-	}
-}
 
 /*  Footer style
 -------------------------------------------------------- 
@@ -127,33 +106,32 @@ header,footer,nav,article,section,aside,figure,figcaption{display:block;}
 
 .buttons {
 	max-width: 100%;
-	margin-right: auto;
-	margin-left: auto;
 	text-align: center;
 
 }
 
-
 .soc li {
     display:inline-block;
-
+    width: 16%;
 }
 	
 .soc li a {
     overflow:hidden;
     display:block;
     z-index: 1;
-    margin-right: 10px;
-    margin-left: 10px;
+    max-width: 40px;
+    width: 100%;
+    margin: 0 auto;
  	
 }
 
 
-.soc li a img { 
- 	width: 40px;
-   	height: 40px;
-   	opacity: 0.8;
-
+.soc li a img {
+    width: 100%;
+   	opacity: 0;
+   	animation: fadein 2s ease-in;
+   	animation-fill-mode: forwards;
+   	animation-delay: 1s;
 
 }
 
@@ -166,21 +144,6 @@ header,footer,nav,article,section,aside,figure,figcaption{display:block;}
 }
 
 
-@media all and (min-width: 900px) {
-
-	.soc li a img { 
-   	 	width: 60px;
-   	 	height: 60px;
-	}
-
-
-	.soc li {
-    margin-right: 50px;
-    margin-left: 50px;
- 
-	}
-
-}
 
 
 /* style for soundcloud and bandsintown widget
@@ -189,7 +152,6 @@ header,footer,nav,article,section,aside,figure,figcaption{display:block;}
 */
 
 .soundcloud {
-
 	position: absolute;
 	bottom: 0;
 	padding: 0;
@@ -198,7 +160,10 @@ header,footer,nav,article,section,aside,figure,figcaption{display:block;}
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	opacity: 0.8;
+	opacity: 0;
+   	animation: fadein 2s ease-in;
+   	animation-fill-mode: forwards;
+   	animation-delay: 1s;
 }
 
 
@@ -208,4 +173,26 @@ header,footer,nav,article,section,aside,figure,figcaption{display:block;}
 		max-height: 200px;
 	}
 }
+
+
+/* animations */
+
+@-webkit-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 0.8; }
+}
+@-moz-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 0.8; }
+}
+@-o-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 0.8; }
+}
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 0.8; }
+}
+
+
 
